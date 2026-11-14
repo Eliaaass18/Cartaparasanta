@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Carta para Santa Claus 🎅</title>
+
+    <style>
+        body {
+            background: #102b24;
+            color: white;
+            font-family: Georgia, serif;
+            text-align: center;
+            padding: 40px 15px;
+        }
+
+        h1 {
+            color: #f4d58a;
+            font-size: 38px;
+        }
+
+        .caja {
+            max-width: 600px;
+            margin: 30px auto;
+            padding: 30px;
+            border: 2px solid #f4d58a;
+            border-radius: 20px;
+            background: #1d4939;
+        }
+
+        button {
+            background: #f4d58a;
+            color: #102b24;
+            padding: 15px 25px;
+            border: none;
+            border-radius: 30px;
+            font-size: 17px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: white;
+        }
+
+        #carta {
+            display: none;
+            background: #fff8e9;
+            color: #3c3028;
+            padding: 25px;
+            border-radius: 10px;
+            margin-top: 25px;
+            text-align: left;
+            line-height: 1.8;
+        }
+
+        .firma {
+            text-align: right;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>🎅 Oficina del Polo Norte</h1>
+
+    <p>Correo oficial de Santa Claus</p>
+
+    <div class="caja">
+
+        <h2>🎄 ¡Una carta especial!</h2>
+
+        <p>
+            Hay un mensaje esperando ser descubierto...
+        </p>
+
+        <button onclick="abrirCarta()">
+            Abrir mi carta 🎁
+        </button>
+
+        <div id="carta">
+
+            <h2>Querido Santa Claus:</h2>
+
+            <p>
+                ¡Hola, Santa!
+
+                AQUÍ ESCRIBIRÁS TU CARTA.
+
+                ¡Feliz Navidad!
+            </p>
+
+            <p class="firma">
+                Atentamente,<br>
+                ELÍAS LK ✨
+            </p>
+
+        </div>
+
+    </div>
+
+    <script>
+        function abrirCarta() {
+            document.getElementById("carta").style.display = "block";
+        }
+    </script>
+
+</body>
+</html>
